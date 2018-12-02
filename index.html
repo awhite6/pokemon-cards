@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+       
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 id="header">POKEMON TRADING CARDS</h1>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="input-form">
+                <form>
+                    <input type="text" value="" id="pokemon-name" placeholder="Enter Card Name"/>
+                    <select name="supertype" id="supertype">
+                        <option value="" default>Select a Supertype</option>
+                        <option value="trainer">Trainer</option>
+                        <option value="pokemon">Pokemon</option>
+                        <option value="energy">Energy</option>
+                    </select>
+                    <select name="pokemon-subtype" id="subtype" class="hidden">
+                        <option value="" default>All</option>
+                        <option value="ex">EX</option>
+                        <option value="MEGA">Mega</option>
+                        <option value="Stage 2">Stage 2</option>
+                        <option value="Stage 1">Stage 1</option>
+                        <option value="Basic">Basic</option>
+                    </select>
+                    <select name="trainer-subtype" id="subtype" class="hidden">
+                        <option value="" default>All</option>
+                        <option value="supporter">Supporter</option>
+                        <option value="stadium">Stadium</option>
+                        <option value="item">Item</option>
+                    </select>
+                    <select name="energy-subtype" id="subtype" class="hidden">
+                        <option value="" default>All</optoin>
+                        <option value="basic">Basic</option>
+                        <option value="special">Special</option>
+                    </select>
+                    <select name="energy-type" id="type" class="hidden">
+                        <option value="" default>Select a Type</option>
+                        <option value="colorless">Normal</option>
+                        <option value="grass">Grass</option>
+                        <option value="psychic">Psychic</option>
+                        <option value="water">Water</option>
+                        <option value="fire">fire</option>
+                        <option value="electric">Electric</option>
+                        <option value="metal">Metal</option>
+                        <option value="darkness">Dark</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="fairy">Fairy</option>
+                    </select>
+                </form>
+                <button type="button" class="btn btn-primary" id="submit">search</button>
+                <button type="button" class="btn btn-primary" id="delete">clear</button>
+            </div>
+            <div id="pokemon-box">
+            </div>
+        </div>
+        <div class="hidden" id="hide-button">
+        </div>
+    </body>
+    <footer>
+        <script src="script.js"></script>
+        <script src="api.js"></script>
+    </footer>
+</html>

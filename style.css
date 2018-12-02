@@ -1,0 +1,46 @@
+.jumbotron > h1{
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    font-weight: bold;
+}
+
+.img-detail {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+}
+
+.img-detail > img {
+    padding-top: 2em;
+    width: 33%;
+}
+
+#hide-button {
+    position: fixed;
+    top: 0; 
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.row {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
